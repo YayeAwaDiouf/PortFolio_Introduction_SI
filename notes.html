@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Notes de cours – Portfolio Yaye Awa DIOUF</title>
+
+  <!-- mêmes fonts / css que index -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+   <!-- Barre de navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-mark">YAD</span>
+        <span class="logo-text">Yaye Awa <strong>DIOUF</strong></span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html"><span>🏠</span> Accueil</a>
+        <a href="travaux.html"><span>📄</span> Travaux</a>
+        <a href="notes.html"><span>📚</span> Notes</a>
+        <a href="docs-si.html"><span>🗂️</span> Docs SI</a>
+        <a href="certifications.html"><span>🏅</span> Certifications</a>
+        <a href="projet-final.html"><span>💼</span> Projets</a>
+        <a href="diaporama.html"><span>🖥️</span> Soutenance</a>
+        <a href="ressources.html"><span>🔗</span> Ressources</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+
+    </div>
+  </header>
+
+  <main class="container section notes-page">
+
+    <!-- En-tête de la page -->
+    <header class="section-header notes-header">
+      <h1>Notes de cours – Systèmes d’Information & Gestion de projet</h1>
+      <p class="subtitle">
+        Cette page regroupe mes notes structurées de cours : cahier des charges, gestion de projet,
+        PGI / ERP et méthode MERISE (MCD). Elles sont rédigées comme un polycopié personnel.
+      </p>
+
+      <!-- Navigation interne -->
+      <nav class="notes-nav">
+        <a href="#cdc" class="notes-chip">📄 Cahier des charges</a>
+        <a href="#projet" class="notes-chip">📋 Gestion de projet SI</a>
+        <a href="#pgi" class="notes-chip">🏭 PGI / ERP</a>
+        <a href="#merise" class="notes-chip">🧠 MERISE / MCD</a>
+      </nav>
+    </header>
+
+
+
+    <!-- ================== 1. GESTION DE PROJET SI ================== -->
+    <section id="projet" class="note-section">
+      <h2 class="note-title">1. Gestion de projet de Système d’Information</h2>
+      <p class="note-intro">
+        Un projet de SI est souvent une réponse à un <strong>besoin d’évolution</strong> de l’organisation : nouveau CRM,
+        nouveau PGI, refonte d’application… D’où la nécessité d’une vraie démarche de gestion de projet.
+      </p>
+
+      <div class="note-grid">
+        <article class="note-card">
+          <h3>1.1. Qu’est-ce qu’un projet ?</h3>
+          <ul>
+            <li>Ensemble d’<strong>activités coordonnées</strong> ;</li>
+            <li>A un <strong>début</strong> et une <strong>fin</strong> ;</li>
+            <li>Vise un <strong>objectif clair</strong> (livrer une solution) ;</li>
+            <li>Mobilise des <strong>ressources humaines et matérielles</strong> ;</li>
+            <li>Répond à un <strong>besoin précis</strong> exprimé par l’organisation.</li>
+          </ul>
+          <p class="note-example">
+            🧩 <strong>Exemple :</strong> mettre en place un CRM pour suivre les clients, leurs contacts, leurs commandes et
+            améliorer la relation commerciale.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>1.2. Les acteurs d’un projet</h3>
+          <ul>
+            <li><strong>Sponsor / Direction</strong> : porte le projet, fixe le budget et les délais, assume la responsabilité.</li>
+            <li><strong>MOA (Maîtrise d’ouvrage)</strong> :
+              <ul>
+                <li>côté « métier » (utilisateurs) ;</li>
+                <li>exprime les besoins, fixe les objectifs ;</li>
+                <li>valide la solution (tests / recette).</li>
+              </ul>
+            </li>
+            <li><strong>MOE (Maîtrise d’œuvre)</strong> :
+              <ul>
+                <li>côté « technique » (DSI, prestataire) ;</li>
+                <li>conçoit, développe, paramètre la solution.</li>
+              </ul>
+            </li>
+            <li><strong>Chef de projet</strong> : pilote le projet au quotidien, fait le lien entre MOA, MOE et direction.</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3>1.3. Les 3 contraintes d’un projet</h3>
+          <p>On parle de <strong>triangle projet</strong> :</p>
+          <ul>
+            <li><strong>Coût</strong> : respect du budget ;</li>
+            <li><strong>Délai</strong> : respect des échéances ;</li>
+            <li><strong>Qualité / Périmètre</strong> : fonctionnalités livrées conformes au besoin.</li>
+          </ul>
+          <p>
+            Un changement sur un sommet du triangle impacte les autres :
+            plus de fonctionnalités &rarr; plus de temps ou plus de budget.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>1.4. Cycle de vie d’un projet SI</h3>
+          <ol>
+            <li><strong>Expression du besoin</strong> (Direction / Métiers).</li>
+            <li><strong>Cahier des charges</strong> : exigences + contraintes.</li>
+            <li><strong>Conception</strong> : étude, choix de solutions, maquettes.</li>
+            <li><strong>Réalisation / Développement</strong> : paramétrage, codage.</li>
+            <li><strong>Tests / Recette</strong> : vérification avec les utilisateurs.</li>
+            <li><strong>Mise en production</strong> : déploiement.</li>
+            <li><strong>Utilisation</strong> : exploitation et maintenance.</li>
+          </ol>
+          <p class="note-tip">
+            💡 On peut représenter ce cycle sous forme de <strong>diagramme de Gantt</strong> pour visualiser les tâches dans le temps.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>1.5. Diagramme de Gantt (rappel)</h3>
+          <ul>
+            <li>Chaque ligne représente une <strong>tâche</strong> du projet.</li>
+            <li>Les barres indiquent la <strong>durée</strong> et les dates de début/fin.</li>
+            <li>On visualise :
+              <ul>
+                <li>les <strong>dépendances</strong> entre tâches ;</li>
+                <li>les ressources affectées ;</li>
+                <li>l’impact d’un retard sur les tâches suivantes.</li>
+              </ul>
+            </li>
+          </ul>
+          <p class="note-example">
+            🧩 Si la tâche « I » est en retard, toutes les tâches qui en dépendent seront décalées &rarr; retard global du projet.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>1.6. Facteurs clés de succès d’un projet SI</h3>
+          <ul>
+            <li><strong>Implication de la direction</strong> (sponsor fort).</li>
+            <li><strong>Participation des utilisateurs</strong> (MOA) dès le début.</li>
+            <li><strong>Bonne communication</strong> (réunions, comptes rendus, arbitrages).</li>
+            <li><strong>Formation et accompagnement au changement</strong>.</li>
+            <li>Respect du <strong>périmètre</strong> (éviter le « toujours plus » en cours de route).</li>
+          </ul>
+          <p class="note-tip">
+            📊 Une enquête (Standish Group) montre que beaucoup de projets SI sont en échec ou « douteux »
+            (retards, surcoûts, fonctionnalités manquantes) &rarr; d’où l’importance de la méthode.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================== 2. PGI / ERP ================== -->
+    <section id="pgi" class="note-section">
+      <h2 class="note-title">2. PGI / ERP – Systèmes d’information intégrés</h2>
+      <p class="note-intro">
+        Un <strong>PGI</strong> (Progiciel de Gestion Intégré) ou <strong>ERP</strong> (Enterprise Resource Planning) est un logiciel
+        qui rassemble dans une seule solution <strong>plusieurs fonctions de l’entreprise</strong> : ventes, achats,
+        stock, comptabilité, paie, etc.
+      </p>
+
+      <div class="note-grid">
+        <article class="note-card">
+          <h3>2.1. Définition et intérêt</h3>
+          <ul>
+            <li>Une <strong>base de données unique</strong> pour l’ensemble des services.</li>
+            <li>Des <strong>modules</strong> par métier mais reliés entre eux.</li>
+            <li><strong>Moins de ressaisies</strong>, moins d’erreurs et d’incohérences.</li>
+            <li>Une <strong>vision globale</strong> de l’entreprise (rapports, tableaux de bord).</li>
+          </ul>
+          <p class="note-example">
+            🧩 <strong>Exemple AutoConcession SA :</strong> un PGI pour gérer RH, Ventes, Achats, Stock, Finance, Décisionnel.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>2.2. Exemple de modules d’un PGI</h3>
+          <ul>
+            <li><strong>RH</strong> : fiches de paie, suivi des salariés, absences, etc.</li>
+            <li><strong>Ventes</strong> : devis, commandes, factures clients.</li>
+            <li><strong>Achats</strong> : commandes fournisseurs, réceptions, factures fournisseurs.</li>
+            <li><strong>Stock</strong> : entrées / sorties, seuils de réapprovisionnement, ruptures.</li>
+            <li><strong>Comptabilité / Finance</strong> : TVA, journaux, bilan, résultat.</li>
+            <li><strong>Décisionnel</strong> : tableaux de bord, graphiques, indicateurs (CA, marges…).</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3>2.3. Etude de cas : AutoConcession SA</h3>
+          <p>
+            Dans le TP, on manipule un PGI sous Excel pour simuler la gestion d’une concession automobile :
+          </p>
+          <ul>
+            <li>Calcul automatique des salaires (module RH).</li>
+            <li>Calcul du chiffre d’affaire sur les ventes.</li>
+            <li>Suivi des stocks de véhicules / pièces.</li>
+            <li>Calcul du résultat net et analyse par modèle.</li>
+          </ul>
+          <p class="note-tip">
+            💡 Le TP montre l’intérêt d’un <strong>SI intégré</strong> plutôt que des fichiers Excel séparés par service.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>2.4. PGI et outils du marché : Odoo</h3>
+          <p>
+            Certains TP utilisent <strong>Odoo</strong>, un ERP open source, pour :
+          </p>
+          <ul>
+            <li>Créer des devis, commandes et factures.</li>
+            <li>Mettre à jour les stocks automatiquement après vente.</li>
+            <li>Suivre les paiements et les relances.</li>
+            <li>Consulter des rapports / tableaux de bord intégrés.</li>
+          </ul>
+          <p class="note-tip">
+            🎯 <strong>Idée clé :</strong> un PGI est un <em>outil</em> au service du SI, mais le SI dépasse l’outil : il inclut aussi
+            les personnes, les procédures et l’organisation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================== 3. MERISE / MCD ================== -->
+    <section id="merise" class="note-section">
+      <h2 class="note-title">3. Méthode MERISE – Modèle Conceptuel de Données (MCD)</h2>
+      <p class="note-intro">
+        La méthode <strong>MERISE</strong> est utilisée pour concevoir des bases de données. Le <strong>MCD</strong> (Modèle
+        Conceptuel de Données) permet de représenter les données de manière logique, à partir d’un texte
+        (cahier des charges, description d’organisation…).
+      </p>
+
+      <div class="note-grid">
+        <article class="note-card">
+          <h3>3.1. Principes du MCD</h3>
+          <ul>
+            <li>On raisonne en termes d’<strong>entités</strong> (choses importantes à mémoriser).</li>
+            <li>On identifie des <strong>associations</strong> (liens entre les entités).</li>
+            <li>On précise les <strong>cardinalités</strong> (0,1,N) pour chaque extrémité.</li>
+          </ul>
+          <p class="note-example">
+            🧩 <strong>Exemple :</strong> un <em>étudiant</em> suit plusieurs <em>matières</em> dans une <em>promotion</em>.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>3.2. Étapes de construction d’un MCD</h3>
+          <ol>
+            <li><strong>Lire attentivement</strong> le texte (cahier des charges, énoncé…).</li>
+            <li><strong>Repérer les entités</strong> (noms importants : Livre, Étudiant, Promotion…).</li>
+            <li><strong>Repérer les associations</strong> (verbes / relations : « enseigne », « concerne », « hospitalisé dans »…).</li>
+            <li><strong>Ajouter les attributs</strong> (propriétés) à chaque entité.</li>
+            <li><strong>Fixer les cardinalités</strong> pour chaque lien.</li>
+          </ol>
+        </article>
+
+        <article class="note-card">
+          <h3>3.3. Exemple 1 – Bibliothèque d’école</h3>
+          <p>
+            On modélise une bibliothèque avec :
+          </p>
+          <ul>
+            <li><strong>Entités possibles :</strong> Livre, Professeur, Étudiant, Promotion, Matière, Mot-clé.</li>
+            <li><strong>Associations :</strong>
+              <ul>
+                <li>Une <strong>Matière</strong> est enseignée dans une <strong>Promotion</strong> ;</li>
+                <li>Un <strong>Professeur</strong> enseigne une ou plusieurs <strong>Matières</strong> ;</li>
+                <li>Un <strong>Livre</strong> concerne plusieurs <strong>Matières</strong> ;</li>
+                <li>Un <strong>Livre</strong> est associé à un ou plusieurs <strong>Mots-clés</strong> ;</li>
+                <li>Un <strong>Étudiant</strong> d’une promotion est évalué dans chaque Matière.</li>
+              </ul>
+            </li>
+          </ul>
+          <p class="note-tip">
+            💡 On peut ensuite dériver ce MCD en MLD (Modèle Logique) puis en tables SQL.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>3.4. Exemple 2 – Hôpital</h3>
+          <p>
+            On modélise un hôpital avec :
+          </p>
+          <ul>
+            <li><strong>Entités possibles :</strong> Employé, Docteur, Infirmier, Service, Salle, Patient…</li>
+            <li><strong>Exemples d’associations :</strong>
+              <ul>
+                <li>Un <strong>Service</strong> est dirigé par un <strong>Docteur</strong> ;</li>
+                <li>Un <strong>Infirmier</strong> est affecté à un seul Service ;</li>
+                <li>Un <strong>Patient</strong> est hospitalisé dans une <strong>Salle</strong> avec un numéro de lit ;</li>
+                <li>Un <strong>Docteur</strong> soigne plusieurs Patients.</li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3>3.5. Pourquoi MERISE est importante ?</h3>
+          <ul>
+            <li>Elle oblige à <strong>analyser</strong> le besoin avant de créer les tables.</li>
+            <li>Elle évite les <strong>redondances</strong> et incohérences de données.</li>
+            <li>Elle facilite la <strong>communication</strong> entre développeurs et métiers.</li>
+            <li>Elle est encore largement utilisée dans de nombreux cours et entreprises.</li>
+          </ul>
+          <p class="note-tip">
+            🎯 À l’examen, bien montrer :
+            <br>– que tu sais <strong>lire un énoncé</strong> ;  
+            <br>– identifier entités / associations ;  
+            <br>– et poser des <strong>cardinalités cohérentes</strong>.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================== 4. CAHIER DES CHARGES ================== -->
+    <section id="cdc" class="note-section">
+      <h2 class="note-title">5. Cahier des charges d’un projet Web</h2>
+      <p class="note-intro">
+        Le <strong>cahier des charges (CDC)</strong> est un document central dans tout projet de système d’information
+        (site web, application, logiciel…). Il décrit ce que le client veut vraiment : <em>qui fait quoi, comment, avec
+        quelles contraintes et dans quels délais</em>.
+      </p>
+
+      <div class="note-grid">
+        <article class="note-card">
+          <h3>4.1. Rôle et définition</h3>
+          <p>
+            Le cahier des charges répond globalement aux questions :
+            <strong>Qui</strong> doit faire <strong>Quoi</strong> ? <strong>Comment</strong> ? <strong>En combien de temps</strong> ?
+          </p>
+          <ul>
+            <li>Il <strong>cadre et périmètre</strong> le projet : ce qui est inclus, ce qui ne l’est pas.</li>
+            <li>Il sert de <strong>référence contractuelle</strong> entre le client et le prestataire.</li>
+            <li>Il facilite l’<strong>estimation des coûts et des délais</strong>.</li>
+            <li>Il évite les malentendus : « on avait dit ça » / « on n’avait pas prévu ça ». </li>
+          </ul>
+          <p class="note-tip">
+            💡 <strong>Image mentale :</strong> on ne construit pas une maison sans plan &rarr; on ne développe pas un SI sans cahier des charges.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>4.2. Qui rédige le cahier des charges ?</h3>
+          <ul>
+            <li><strong>Le client</strong>, s’il connaît bien son besoin et a le temps de le formaliser.</li>
+            <li><strong>Un chef de projet</strong> (côté client ou prestataire) : souvent plus structuré.</li>
+            <li>Parfois <strong>le prestataire</strong>, après plusieurs échanges, à partir d’interviews et d’ateliers.</li>
+          </ul>
+          <p>
+            Dans la pratique, on a souvent un <strong>travail collaboratif</strong> : le client exprime ses besoins, le
+            prestataire reformule, structure et complète.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>4.3. Qualifier et traduire le besoin</h3>
+          <p>
+            Le chef de projet doit <strong>traduire le langage métier</strong> du client en besoins fonctionnels et techniques.
+          </p>
+          <p class="note-example">
+            🧩 <strong>Exemple :</strong><br>
+            Client : « Je veux un site où je peux changer les textes et calculer des taux d’assurance. »<br>
+            Interprétation : <em>Site vitrine avec CMS (type WordPress) + développement d’un module de simulation.</em>
+          </p>
+          <p>
+            D’où l’importance de :
+          </p>
+          <ul>
+            <li>Poser des questions ouvertes (« Qu’attendez-vous du site ? »).</li>
+            <li>Prendre <strong>beaucoup de notes</strong> en réunion.</li>
+            <li>Reformuler pour valider la compréhension.</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3>4.4. Les grandes parties d’un cahier des charges</h3>
+          <ul>
+            <li><strong>Profil du client</strong> : activité, contexte, maturité digitale.</li>
+            <li><strong>Objectifs du projet</strong> : visibilité, vente, information, support, etc.</li>
+            <li><strong>Type de site</strong> : vitrine, e-commerce, intranet, GED, blog, etc.</li>
+            <li><strong>Solution technique</strong> : CMS, développement spécifique, framework…</li>
+            <li><strong>Graphisme & UX</strong> : maquettes, thème, responsive, identité visuelle.</li>
+            <li><strong>Fonctionnalités</strong> : formulaires, espace membre, recherche, blog, panier…</li>
+            <li><strong>Back-office</strong> : ce que le client pourra gérer lui-même.</li>
+            <li><strong>Multilingue, SEO, newsletter, réseaux sociaux</strong>, etc.</li>
+            <li><strong>Contraintes</strong> : planning, budget, sécurité, hébergement, maintenance.</li>
+          </ul>
+        </article>
+
+        <article class="note-card">
+          <h3>4.5. Parties indispensables du CDC</h3>
+          <ul>
+            <li>La <strong>solution technique envisagée</strong> (ou les options).</li>
+            <li>Les <strong>délais</strong> (jalons, livraisons, phases de recette).</li>
+            <li>Les <strong>livrables attendus</strong> (site, documentation, maquettes, formation…).</li>
+            <li>Une <strong>fourchette de budget</strong> (si elle est connue).</li>
+            <li>Le <strong>périmètre du projet</strong> : ce qui est fait et ce qui ne sera pas fait.</li>
+          </ul>
+          <p class="note-tip">
+            💡 On parle souvent de <strong>périmètre fonctionnel</strong> : liste de toutes les fonctionnalités clairement
+            identifiées et validées.
+          </p>
+        </article>
+
+        <article class="note-card">
+          <h3>4.6. Liens avec le devis et le marketing</h3>
+          <ul>
+            <li>Le CDC sert de base au <strong>devis</strong> : chiffrage du temps, donc du prix.</li>
+            <li>Pour les gros projets : CDC détaillé + <strong>étude de marché / note d’intention</strong>.</li>
+            <li>On peut y ajouter : analyse des concurrents, positionnement, cibles, stratégie digitale.</li>
+          </ul>
+          <p class="note-tip">
+            🎯 <strong>À retenir :</strong> un bon cahier des charges diminue les risques de dépassement de budget,
+            de délais et de conflits entre client et prestataire.
+          </p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yaye Awa DIOUF — Notes de cours</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+    // Detecte les cartes qui entrent sur l'écran
+    const notesCards = document.querySelectorAll('.note-card');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          entry.target.classList.add('show-card');
+          observer.unobserve(entry.target);
+        }
+      })
+    }, { threshold: 0.15 });
+
+    notesCards.forEach(card => observer.observe(card));
+  </script>
+  <script>
+  const navToggle = document.getElementById("navToggle");
+  const menu = document.querySelector(".main-nav");
+
+  navToggle.addEventListener("click", () => {
+    menu.classList.toggle("show-nav");
+  });
+</script>
+
+</body>
+</html>

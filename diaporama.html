@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Soutenance – Portfolio Yaye Awa DIOUF</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="soutenance-page">
+
+  <!-- HEADER identique -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-mark">YAD</span>
+        <span class="logo-text">Yaye Awa <strong>DIOUF</strong></span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html"><span>🏠</span> Accueil</a>
+        <a href="travaux.html"><span>📄</span> Travaux</a>
+        <a href="notes.html"><span>📚</span> Notes</a>
+        <a href="docs-si.html"><span>🗂️</span> Docs SI</a>
+        <a href="certifications.html"><span>🏅</span> Certifications</a>
+        <a href="projet-final.html"><span>💼</span> Projets</a>
+        <a href="diaporama.html" class="active"><span>🖥️</span> Soutenance</a>
+        <a href="ressources.html"><span>🔗</span> Ressources</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle">☰</button>
+    </div>
+  </header>
+
+  <main class="container soutenance-main">
+
+    <!-- 🌟 PARTIE 1 : Portfolio -->
+    <section class="sout-section">
+      <h1 class="sout-title">🎥 Présentation du Portfolio</h1>
+      <p class="sout-desc">
+        Ce portfolio a été réalisé afin de présenter l'ensemble de mes travaux, notes, analyses, projets et compétences acquises durant l’UE <strong>Introduction aux Systèmes d’Information</strong>.
+      </p>
+
+      <div class="sout-box">
+        <p><strong>📌 Lien d’accès :</strong></p>
+        <a class="sout-btn" target="_blank" href="https://yayeawadiouf.github.io/PorteFolio_Introduction_SI/">
+          🌐 Voir le Portfolio en ligne
+        </a>
+      </div>
+    </section>
+
+    <!-- 👥 PARTIE 2 : PROJET DE GROUPE -->
+    <section class="sout-section">
+      <h1 class="sout-title">💼 Projet Web – Gestion Associative <br> <img src="Soutenance/logo.png" class="logo-projet" alt="logo Chingu Asso"> Chingu’Asso</h1>
+
+      <p class="sout-desc">
+        🔹 <strong>Chingu’Asso</strong> est une application web de gestion destinée aux associations afin de suivre : les membres, cotisations, événements et participations.  
+        <br>Elle a été développée en <strong>Python (Flask), SQLite et Bootstrap</strong>.
+      </p>
+
+      <ul class="sout-list">
+        <li>👥 Gestion des adhérents</li>
+        <li>💰 Gestion des cotisations</li>
+        <li>📅 Organisation des événements</li>
+        <li>📝 Suivi des inscriptions aux activités</li>
+        <li>📊 Tableau de bord global</li>
+      </ul>
+
+      <div class="sout-links">
+
+        <!-- 📄 PDF -->
+        <a class="sout-btn" target="_blank" href="Soutenance/ChinguAsso_Pdf_Presentation_Livrable.pdf">
+          📄 Voir le Livrable (PDF)
+        </a>
+
+        <!-- 📽 Vidéo Présentation -->
+        <a class="sout-btn" href="#videoPres">
+          🎬 Vidéo de Présentation
+        </a>
+
+        <!-- 💻 Vidéo Test -->
+        <a class="sout-btn" href="#videoTest">
+          🧪 Vidéo Test de l’Application
+        </a>
+
+      </div>
+    </section>
+
+    <!-- 🎥 Vidéos -->
+    <section class="sout-section" id="videoPres">
+      <h2 class="sout-subtitle">🎬 Vidéo de Présentation</h2>
+      <video class="sout-video" controls controlsList="nodownload">
+        <source src="Soutenance/ChinguAsso_Video_Presentation_Livrable.mp4" type="video/mp4">
+      </video>
+    </section>
+
+    <section class="sout-section" id="videoTest">
+      <h2 class="sout-subtitle">🧪 Vidéo Test de l’application</h2>
+      <video class="sout-video" controls controlsList="nodownload">
+        <source src="Soutenance/ChinguAsso_App_Video_Test.mp4" type="video/mp4">
+      </video>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Soutenance – Portfolio de Yaye Awa DIOUF</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const navToggle = document.getElementById("navToggle");
+    const menu = document.querySelector(".main-nav");
+    navToggle.addEventListener("click", () => { menu.classList.toggle("show-nav"); });
+  </script>
+
+</body>
+</html>

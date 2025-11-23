@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projets – Portfolio Yaye Awa DIOUF</title>
+
+  <!-- même CSS que les autres pages -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="projets-page">
+
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-mark">YAD</span>
+        <span class="logo-text">Yaye Awa <strong>DIOUF</strong></span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html"><span>🏠</span> Accueil</a>
+        <a href="travaux.html"><span>📄</span> Travaux</a>
+        <a href="notes.html"><span>📚</span> Notes</a>
+        <a href="docs-si.html"><span>🗂️</span> Docs SI</a>
+        <a href="certifications.html"><span>🏅</span> Certifications</a>
+        <a href="projet-final.html" class="active"><span>💼</span> Projets</a>
+        <a href="diaporama.html"><span>🖥️</span> Soutenance</a>
+        <a href="ressources.html"><span>🔗</span> Ressources</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+
+    </div>
+  </header>
+
+  <main class="container section projets-main">
+
+    <!-- Titre global -->
+    <header class="section-header">
+      <h1 class="proj-main-title">🚀 Portfolio de Projets — Yaye Awa DIOUF</h1>
+      <p class="proj-page-intro">
+        Cette page présente mes principaux <strong>projets personnels</strong>, 
+        <strong>projets GitHub</strong> et <strong>projets académiques en Systèmes d’Information</strong>
+        (PGI, cahier des charges, Gantt, MERISE, etc.).
+      </p>
+    </header>
+
+    <!-- =======================================
+         1. PROJETS PERSONNELS & GITHUB
+    ======================================== -->
+    <h2 class="proj-section-title">💻 Projets personnels & GitHub</h2>
+    <p class="proj-section-intro">
+      Projets développés dans un cadre personnel, d’évaluation ou de pratique sur GitHub
+      : applications web, chat réseau, plateforme de recettes, etc.
+    </p>
+
+    <div class="grid projects">
+
+      <!-- 1. Portfolio -->
+      <article class="card project">
+        <span class="project-tag">🌐 Portfolio</span>
+        <h3>Portfolio Personnel Interactif</h3>
+        <p>
+          Site web personnel que tu es en train de consulter, conçu pour présenter mes travaux,
+          mes notes de cours, mes projets et mes ressources de veille en Systèmes d’Information.
+        </p>
+        <ul>
+          <li>Architecture multi-pages (Travaux, Notes, Docs SI, Projet, etc.) ;</li>
+          <li>Design responsive avec animations et effets visuels ;</li>
+          <li>Mise en avant des productions de l’UE SI / MIAGE.</li>
+        </ul>
+        <a class="btn pill" href="#top">✨ Projet en cours</a>
+      </article>
+
+      <!-- 2. Classroom Monitor -->
+      <article class="card project">
+        <span class="project-tag" style="background:linear-gradient(135deg,#ff8c00,#ff1744);">📚 GitHub</span>
+        <h3>Classroom Monitor — Suivi d’Activité en Classe</h3>
+        <p>
+          Application de monitoring visant à suivre l’activité des étudiants en salle de classe
+          et analyser leur comportement ou participation à partir de données collectées.
+        </p>
+        <ul>
+          <li>Gestion des étudiants, sessions de cours et indicateurs ;</li>
+          <li>Organisation par classes / groupes ;</li>
+          <li>Préparation à l’analyse décisionnelle sur les comportements.</li>
+        </ul>
+        <a class="btn pill" href="https://github.com/YayeAwaDiouf/classroom_monitor" target="_blank">🔗 Voir sur GitHub</a>
+      </article>
+
+      <!-- 3. Projet A3 – Chat réseau -->
+      <article class="card project">
+        <span class="project-tag" style="background:linear-gradient(135deg,#00c6ff,#0072ff);">💬 Réseau</span>
+        <h3>Projet A3 — Application de Chat en Réseau</h3>
+        <p>
+          Développement d’une application de messagerie permettant à plusieurs utilisateurs
+          de communiquer via un réseau (modèle client–serveur, sockets).
+        </p>
+        <ul>
+          <li>Communication en temps réel entre clients ;</li>
+          <li>Architecture client / serveur avec gestion des connexions ;</li>
+          <li>Découverte pratique des sockets et de la communication réseau.</li>
+        </ul>
+        <a class="btn pill" href="https://github.com/YayeAwaDiouf" target="_blank">🔗 Voir sur GitHub</a>
+      </article>
+
+      <!-- 4. Simplon Évaluation -->
+      <article class="card project">
+        <span class="project-tag" style="background:linear-gradient(135deg,#7f00ff,#e100ff);">🧪 Évaluation</span>
+        <h3>Projet Simplon — Application d’Évaluation</h3>
+        <p>
+          Mini-application web réalisée dans le cadre d’une évaluation technique, 
+          pour démontrer la maîtrise des bases du développement web (CRUD, formulaires, persistance).
+        </p>
+        <ul>
+          <li>Gestion d’enregistrements (ajout, modification, suppression) ;</li>
+          <li>Interface web avec formulaires de saisie et validation ;</li>
+          <li>Organisation du code de manière claire et modulaire.</li>
+        </ul>
+        <a class="btn pill" href="https://github.com/YayeAwaDiouf" target="_blank">🔗 Voir sur GitHub</a>
+      </article>
+
+      <!-- 5. CookShare -->
+      <article class="card project">
+        <span class="project-tag" style="background:linear-gradient(135deg,#ff512f,#dd2476);">🍲 Web App</span>
+        <h3>CookShare — Plateforme de Partage de Recettes</h3>
+        <p>
+          Application web qui permet aux utilisateurs de publier, consulter et partager des recettes de cuisine,
+          avec une interface organisée par types de plats et ingrédients.
+        </p>
+        <ul>
+          <li>Publication de recettes avec description détaillée ;</li>
+          <li>Organisation par catégories (plats, desserts, etc.) ;</li>
+          <li>Développement en Django, structuration MVC et base de données.</li>
+        </ul>
+        <a class="btn pill" href="#" target="_blank">📎 Voir la présentation du projet</a>
+      </article>
+
+      <!-- 6. Application de gestion associative -->
+      <article class="card project">
+        <span class="project-tag" style="background:linear-gradient(135deg,#00b09b,#96c93d);">🏛️ Association</span>
+        <h3>Application Web de Gestion Associative</h3>
+        <p>
+          Application destinée à centraliser la gestion d’une association : 
+          membres, cotisations, événements et suivi administratif.
+        </p>
+        <ul>
+          <li>Gestion des membres et de leur statut ;</li>
+          <li>Suivi des cotisations et relances ;</li>
+          <li>Gestion des activités / événements associatifs.</li>
+        </ul>
+        <a class="btn pill" href="#" target="_blank">📎 Documentation du projet</a>
+      </article>
+
+    </div>
+
+    <!-- =======================================
+         2. PROJETS ACADÉMIQUES SI & PGI
+    ======================================== -->
+    <h2 class="proj-section-title">🏢 Projets académiques — SI, PGI & Gestion de projet</h2>
+    <p class="proj-section-intro">
+      Projets réalisés dans le cadre de l’UE Systèmes d’Information / MIAGE : 
+      PGI (Odoo), gestion de projet, cahier des charges, méthodes MERISE et UML.
+    </p>
+
+    <div class="grid projects">
+
+      <!-- 7. Gestion de projet Intranet -->
+      <article class="card project">
+        <span class="project-tag" style="background:linear-gradient(135deg,#f7b733,#fc4a1a);">📝 Intranet SI</span>
+        <h3>Gestion de projet Intranet — CDC, Gantt & MERISE</h3>
+        <p>
+          Projet complet autour de la mise en place d’un intranet : 
+          de l’analyse du besoin jusqu’à la modélisation et la planification.
+        </p>
+        <ul>
+          <li>Rédaction d’un cahier des charges complet ;</li>
+          <li>Modélisation MERISE (MCD, MLD) & use case UML ;</li>
+          <li>Planification détaillée sous forme de diagramme de Gantt.</li>
+        </ul>
+        <a class="btn pill" href="docs-si/dossier_gestion_projet.pdf" target="_blank">📎 Dossier gestion de projet</a>
+      </article>
+
+      <!-- 8. TalentSeek -->
+      <article class="card project">
+        <span class="project-tag" style="background:linear-gradient(135deg,#4facfe,#00f2fe);">👔 TalentSeek</span>
+        <h3>TalentSeek — Spécification Fonctionnelle Générale</h3>
+        <p>
+          Étude et rédaction d’une SFG pour une application de recrutement permettant 
+          aux candidats de postuler et aux recruteurs de gérer les offres d’emploi.
+        </p>
+        <ul>
+          <li>Identification des acteurs (candidat, recruteur, administrateur) ;</li>
+          <li>Définition des cas d’utilisation (soumission de CV, gestion des offres) ;</li>
+          <li>Règles de gestion et structuration fonctionnelle de l’application.</li>
+        </ul>
+        <a class="btn pill" href="docs-si/SFG_TalentSeek.docx" target="_blank">📎 SFG TalentSeek</a>
+      </article>
+
+      <!-- 9. PGI avec Odoo -->
+      <article class="card project">
+        <span class="project-tag" style="background:linear-gradient(135deg,#8e2de2,#4a00e0);">🛒 PGI / Odoo</span>
+        <h3>PGI avec Odoo — Gestion Commerciale</h3>
+        <p>
+          Travaux pratiques sur le PGI Odoo pour simuler la gestion commerciale 
+          d’une petite entreprise : ventes, facturation et suivi des stocks.
+        </p>
+        <ul>
+          <li>Création de clients, articles, devis et factures ;</li>
+          <li>Mise à jour automatique des stocks après vente ;</li>
+          <li>Découverte des principes d’intégration d’un PGI.</li>
+        </ul>
+        <a class="btn pill" href="docs-si/Odoo_presentation.pdf" target="_blank">📎 Présentation Odoo</a>
+      </article>
+
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yaye Awa DIOUF — Projets</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // petite animation d’apparition sur les cartes
+    document.querySelectorAll('.card.project').forEach((el, i) => {
+      setTimeout(() => {
+        el.classList.add('show-card');
+      }, 150 * i);
+    });
+  </script>
+  <script>
+  const navToggle = document.getElementById("navToggle");
+  const menu = document.querySelector(".main-nav");
+
+  navToggle.addEventListener("click", () => {
+    menu.classList.toggle("show-nav");
+  });
+</script>
+
+</body>
+</html>

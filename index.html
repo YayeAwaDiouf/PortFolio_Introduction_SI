@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio – Yaye Awa DIOUF – Introduction aux SI</title>
+  <meta name="description" content="Portfolio académique du semestre 5 pour l’introduction aux systèmes d’information (MIAGE).">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="home">
+
+  <!-- Barre de navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-mark">YAD</span>
+        <span class="logo-text">Yaye Awa <strong>DIOUF</strong></span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html"><span>🏠</span> Accueil</a>
+        <a href="travaux.html"><span>📄</span> Travaux</a>
+        <a href="notes.html"><span>📚</span> Notes</a>
+        <a href="docs-si.html"><span>🗂️</span> Docs SI</a>
+        <a href="certifications.html"><span>🏅</span> Certifications</a>
+        <a href="projet-final.html"><span>💼</span> Projets</a>
+        <a href="diaporama.html"><span>🖥️</span> Soutenance</a>
+        <a href="ressources.html"><span>🔗</span> Ressources</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+
+    </div>
+  </header>
+
+  <!-- Section d'accueil -->
+  <main>
+    <section class="hero container">
+      <div class="hero-left">
+        <p class="badge">Semestre 5 · MIAGE · Introduction aux SI</p>
+        <h1>Portfolio académique<br>Introduction aux Systèmes d’Information</h1>
+        <p class="subtitle">
+          Étudiante en MIAGE, passionnée par les systèmes d’information.<br>
+          Ce portfolio présente mes travaux, notes, documents, certifications, projet final et ressources de soutenance.
+        </p>
+
+        <div class="hero-goal">
+          <h2>Objectif du portfolio</h2>
+          <p>
+            Montrer ma compréhension des systèmes d’information : leurs concepts, leur modélisation, leur mise en œuvre
+            et leur rôle stratégique dans l’entreprise. Chaque rubrique met en avant une facette de ce parcours :
+            TD/TP, synthèses de cours, documents d’analyse, projet d’intégration et préparation à la soutenance.
+          </p>
+        </div>
+
+        <div class="button-grid">
+          <a href="travaux.html" class="btn pill primary">
+            📂 <span>Travaux demandés</span>
+          </a>
+          <a href="notes.html" class="btn pill">
+            📚 <span>Notes de cours</span>
+          </a>
+          <a href="docs-si.html" class="btn pill">
+            🧩 <span>Documents SI</span>
+          </a>
+          <a href="certifications.html" class="btn pill">
+            🏅 <span>Certifications</span>
+          </a>
+          <a href="projet-final.html" class="btn pill">
+            🚀 <span>Projet final</span>
+          </a>
+          <a href="diaporama.html" class="btn pill">
+            🎤 <span>Diaporama</span>
+          </a>
+          <a href="ressources.html" class="btn pill">
+            🔗 <span>Autres ressources</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+
+        <div class="profile-card">
+          <div class="profile-photo-ring">
+            <div class="profile-photo-wrap">
+              <!-- mets bien ton image à cet emplacement : assets/img/profil.jpg -->
+              <img src="assets/img/profil.jpg" alt="Photo de Yaye Awa DIOUF" class="profile-photo">
+            </div>
+          </div>
+          <h3>Yaye Awa DIOUF</h3>
+          <p>Étudiante en MIAGE · Systèmes d’Information</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Yaye Awa DIOUF — Portfolio Introduction aux SI (S5 MIAGE)</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script>
+  const navToggle = document.getElementById("navToggle");
+  const menu = document.querySelector(".main-nav");
+
+  navToggle.addEventListener("click", () => {
+    menu.classList.toggle("show-nav");
+  });
+</script>
+
+</body>
+</html>

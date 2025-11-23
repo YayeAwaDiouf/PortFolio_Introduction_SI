@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ressources – Portfolio Yaye Awa DIOUF</title>
+
+  <link rel="stylesheet" href="assets/css/style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+
+  <!-- Barre de navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <div class="logo">
+        <span class="logo-mark">YAD</span>
+        <span class="logo-text">Yaye Awa <strong>DIOUF</strong></span>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html"><span>🏠</span> Accueil</a>
+        <a href="travaux.html"><span>📄</span> Travaux</a>
+        <a href="notes.html"><span>📚</span> Notes</a>
+        <a href="docs-si.html"><span>🗂️</span> Docs SI</a>
+        <a href="certifications.html"><span>🏅</span> Certifications</a>
+        <a href="projet-final.html"><span>💼</span> Projets</a>
+        <a href="diaporama.html"><span>🖥️</span> Soutenance</a>
+        <a href="ressources.html"><span>🔗</span> Ressources</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle">☰</button>
+
+    </div>
+  </header>
+
+<main class="container section">
+
+  <!-- ========================== -->
+  <!-- 🌐 SECTION SITES & OUTILS -->
+  <!-- ========================== -->
+  <header class="section-header ressources-header">
+    <h1>Ressources — Outils & Documentation</h1>
+    <p class="subtitle">Plateformes utilisées & sources académiques pour les systèmes d’information.</p>
+  </header>
+
+  <h2 class="ress-subtitle">🌐 Sites & Outils pratiques</h2>
+  <section class="ress-grid">
+
+    <article class="ress-card"><span class="ress-icon">🕒</span><h3>Online Gantt</h3><p>Création de diagrammes de Gantt interactifs.</p><a href="https://www.onlinegantt.com/#/gantt" target="_blank" class="ress-btn">🌐 Visiter</a></article>
+
+    <article class="ress-card"><span class="ress-icon">🎨</span><h3>Figma</h3><p>Maquettes & prototypage UI/UX.</p><a href="https://www.figma.com/fr-fr/" target="_blank" class="ress-btn">🌐 Visiter</a></article>
+
+    <article class="ress-card"><span class="ress-icon">📊</span><h3>Draw.io</h3><p>Diagrammes UML, BPMN, Acteurs-Flux.</p><a href="https://www.drawio.com/" target="_blank" class="ress-btn">🌐 Visiter</a></article>
+
+    <article class="ress-card"><span class="ress-icon">🏭</span><h3>Documentation Odoo</h3><p>Documentation officielle ERP/PGI.</p><a href="https://www.odoo.com/documentation/18.0/fr/applications/essentials/activities.html" target="_blank" class="ress-btn">🌐 Visiter</a></article>
+
+  </section>
+
+  <!-- ========================== -->
+  <!-- 📚 SECTION DOCUMENTATION -->
+  <!-- ========================== -->
+  <h2 class="ress-subtitle doc">📚 Documentation académique</h2>
+
+  <section class="doc-grid-full">
+
+    <!-- UML -->
+    <div class="doc-group">
+      <h3 class="doc-cat">🧩 UML — Modélisation</h3>
+      <a class="doc-link" target="_blank" href="https://www.omg.org/spec/UML">📎 UML Specifications — OMG</a>
+      <a class="doc-link" target="_blank" href="https://www.lucidchart.com/pages/fr/diagramme-uml">📎 Guide UML — Lucidchart</a>
+    </div>
+
+    <!-- MERISE & BDD -->
+    <div class="doc-group">
+      <h3 class="doc-cat">🧠 MERISE / Bases de données</h3>
+      <a class="doc-link" target="_blank" href="https://public.iut-orsay.fr/~fmaisonnat/ens/merise/">📎 Introduction MERISE — Univ. Orsay</a>
+      <a class="doc-link" target="_blank" href="https://cours.uqac.ca/8INF104/notes/Merise_MCD.pdf">📎 Méthode MERISE — MCD</a>
+    </div>
+
+    <!-- SI -->
+    <div class="doc-group">
+      <h3 class="doc-cat">💻 Systèmes d’Information</h3>
+      <a class="doc-link" target="_blank" href="https://openclassrooms.com/fr/courses/6269541-introduction-aux-systemes-dinformation">📎 Introduction aux SI — OC</a>
+    </div>
+
+    <!-- ERP -->
+    <div class="doc-group">
+      <h3 class="doc-cat">🏭 ERP / PGI — Odoo</h3>
+      <a class="doc-link" target="_blank" href="https://www.odoo.com/documentation/18.0/fr/applications/essentials/index.html">📎 Documentation Odoo — Fonctions</a>
+    </div>
+
+    <!-- Projet & Gantt -->
+    <div class="doc-group">
+      <h3 class="doc-cat">🕒 Gestion de projet / Gantt</h3>
+      <a class="doc-link" target="_blank" href="https://openpm.org/fr/guide-pmbok">📎 PMBOK Simplifié — OpenPM</a>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Yaye Awa DIOUF — Ressources</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+<script>
+  const cards = document.querySelectorAll('.ress-card');
+  const obs = new IntersectionObserver(nodes => {
+    nodes.forEach(n => { if (n.isIntersecting) n.target.classList.add('show'); });
+  }, {threshold:0.2});
+  cards.forEach(card=>obs.observe(card));
+
+  const docs = document.querySelectorAll('.doc-link');
+  docs.forEach((link,i)=>{
+    link.style.opacity="0"; link.style.transform="translateX(-20px)";
+    setTimeout(()=>{ link.style.transition=".4s"; link.style.opacity="1"; link.style.transform="translateX(0)"; }, 200+i*120);
+  });
+</script>
+<script>
+  const navToggle = document.getElementById("navToggle");
+  const menu = document.querySelector(".main-nav");
+
+  navToggle.addEventListener("click", () => {
+    menu.classList.toggle("show-nav");
+  });
+</script>
+
+</body>
+</html>
